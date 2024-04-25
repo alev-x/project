@@ -145,8 +145,23 @@ console.log(logg.substring(7, 12));
 console.log(logg.substr(7, 12));
 */
 
-//практика
 
+//callback функции
+
+function learnJS (lang, callback) {
+	console.log(`Я учу: ${lang}`);
+	callback();
+}
+
+function done () {
+	console.log('Я прошел этот урок!');
+}
+
+learnJS("JavaScript", done);
+
+
+//практика
+/*
 let numberOfFilms;
 
 function start () {
